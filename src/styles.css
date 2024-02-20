@@ -1,0 +1,23 @@
+@layer colors {
+  :root {
+    --primary-color: #0f5257;
+    --secondary-color: #0b3142;
+    --tertiary-color: #9c92a3;
+    --base-color-1: #c6b9cd;
+    --base-color-2: #d6d3f0;
+  }
+}
+
+@layer layout {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color-scheme: dark light;
+  }
+  body {
+    font-family: system-ui, sans-serif;
+    line-height: 1.6;
+    font-size: 1.125rem;
+  }
+}
