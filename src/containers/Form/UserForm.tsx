@@ -2,6 +2,7 @@ import './UserForm.css';
 import Button from '../../components/Button/Button';
 import {useForm, type SubmitHandler} from 'react-hook-form';
 import z from 'zod';
+import {zodResolver} from '@hookform/resolvers/zod';
 
 const formResolver = z.object({
 	email: z.string().email({message: 'El campo debe ser un Email'}),
@@ -12,8 +13,9 @@ type FormInputs = z.infer<typeof formResolver>;
 
 export default function UserForm() {
 	const {register, handleSubmit, formState: {errors}} = useForm<FormInputs>(
-		{defaultValues: 
-			{email: '', password: ''},
+		{
+			defaultValues: {email: '', password: ''},
+			resolver: zodResolver(formResolver),
 		},
 	);
 
