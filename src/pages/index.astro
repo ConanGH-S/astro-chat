@@ -1,9 +1,10 @@
 ---
-import '../styles.css';
-import Button from '../components/Button/Button';
+import '../styles/styles.css';
+import '../styles/index.css';
+import UserForm from '../containers/Form/UserForm';
 ---
 
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="utf-8" />
     <link
@@ -22,7 +23,14 @@ import Button from '../components/Button/Button';
     <title>astro-chat</title>
   </head>
   <body>
-    <h1>Astro chat</h1>
-    <Button>Hola</Button>
+    <section class="center-container">
+      <section class="header">
+        <h1>Bienvenido a Astro chat</h1>
+        <h3>Inicia sesión para continuar</h3>
+      </section>
+      <section class="card">
+        <UserForm client:load />
+      </section>
+    </section>
   </body>
 </html>

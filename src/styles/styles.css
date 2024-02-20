@@ -3,8 +3,9 @@
     --primary-color: #0f5257;
     --secondary-color: #0b3142;
     --tertiary-color: #9c92a3;
-    --base-color-1: #c6b9cd;
-    --base-color-2: #d6d3f0;
+    --base-1: #c6b9cd;
+    --base-2: #d6d3f0;
+    --base-3: #212121;
   }
 }
 
@@ -19,5 +20,10 @@
     font-family: system-ui, sans-serif;
     line-height: 1.6;
     font-size: 1.125rem;
+  }
+  input {
+    border: none;
+    border-radius: 3px;
+    padding: 8px 0;
   }
 }

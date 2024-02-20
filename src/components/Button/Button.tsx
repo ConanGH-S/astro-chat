@@ -15,7 +15,7 @@ const Button = ({children, type = 'button', variant = 'button'}: ButtonProps) =>
 			);
 		default:
 			return (
-				<button type={type} className='btn'>{children}</button>
+				<button type={type} className={'btn'}>{children}</button>
 			);
 	}
 };

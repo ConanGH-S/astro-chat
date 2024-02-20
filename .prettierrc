@@ -4,6 +4,7 @@
   "printWidth": 80,
   "singleQuote": true,
   "useTabs": false,
+  "htmlWhitespaceSensitivity": "css",
   "singleAttributePerLine": true,
   "tabWidth": 2,
   "trailingComma": "none"

@@ -1,0 +1,22 @@
+form {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 15px;
+
+  & > div {
+    display: inherit;
+    flex-direction: column;
+    gap: 5px;
+
+    input {
+      padding: 16px 12px;
+      border-radius: 16px;
+    }
+  }
+
+  & > button {
+    margin-inline: auto;
+    border-radius: 6px;
+  }
+}

@@ -1,0 +1,25 @@
+.center-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100dvh;
+  gap: 12px;
+}
+
+section.header {
+  text-align: center;
+  line-height: 3rem;
+
+  h3 {
+    font-size: 1.1rem;
+    font-weight: 400;
+  }
+}
+
+.card {
+  width: min(300px, 100% - 4rem);
+  margin-inline: auto;
+  background: var(--base-3);
+  padding: 2rem 1.5rem;
+  border-radius: 12px;
+}

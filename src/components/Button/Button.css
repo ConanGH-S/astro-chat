@@ -1,8 +1,15 @@
 .btn {
-  --padding: 3rem;
+  --padding-x: 3rem;
+  --padding-y: 10px;
+  --transition-delay: 150ms;
   border: none;
-  width: 100%;
   background-color: var(--primary-color);
-  padding: var(--padding);
+  padding-inline: var(--padding-x);
+  padding-block: var(--padding-y);
   cursor: pointer;
+  transition: background-color var(--transition-delay) ease-out;
+}
+
+.btn:hover {
+  background-color: var(--secondary-color);
 }
